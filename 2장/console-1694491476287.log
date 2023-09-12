@@ -1,0 +1,89 @@
+name = "고욱현"
+'고욱현'
+documnet.write("제 이름은 " + name + "입니다.")
+VM188:1 Uncaught ReferenceError: documnet is not defined
+    at <anonymous>:1:1
+(익명) @ VM188:1
+document.write("제 이름은 " + name + "입니다.")
+undefined
+document.write("제 이름은 " + name + "입니다.")
+undefined
+document.write("제 이름은 " + name + "입니다.")
+undefined
+document.write("제 이름은 " + name + "입니다.")
+undefined
+document.write("제 이름은 " + name + "입니다.")
+undefined
+document.write("제 이름은 " + name + "입니다.")
+undefined
+let result
+undefined
+result = 10
+10
+result = 20
+20
+const number = 10
+undefined
+number
+10
+result
+20
+number = 20
+VM389:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:8
+(익명) @ VM389:1
+let age = 25
+undefined
+console.log(name +"님의 나이는 " + age + "살 입니다.")
+VM643:1 고욱현님의 나이는 25살 입니다.
+undefined
+console.log('${name}님의 나이는 ${age}살 입니다.'
+VM737:1 Uncaught SyntaxError: missing ) after argument list
+console.log(`${name}님의 나이는 ${age}살 입니다.`)
+VM758:1 고욱현님의 나이는 25살 입니다.
+undefined
+let student = {
+    major : "컴퓨터공학부",
+    idNum : "201894005,
+VM922:3 Uncaught SyntaxError: Invalid or unexpected token
+let student = {
+    major : "컴퓨터공학부",
+    idNum : 201894005,
+    name = "고욱현"
+}
+VM970:4 Uncaught SyntaxError: Invalid shorthand property initializer
+student
+VM1004:1 Uncaught ReferenceError: student is not defined
+    at <anonymous>:1:1
+(익명) @ VM1004:1
+let student = {
+    major : "컴퓨터공학부",
+    idNum : 201894005,
+    name = "고욱현"
+}
+VM1008:4 Uncaught SyntaxError: Invalid shorthand property initializer
+let student = {
+    major : "컴퓨터공학부",
+    idNum : 201894005,
+    name : "고욱현"
+}
+undefined
+student
+{major: '컴퓨터공학부', idNum: 201894005, name: '고욱현'}
+studnet = {major}
+VM1094:1 Uncaught ReferenceError: major is not defined
+    at <anonymous>:1:12
+(익명) @ VM1094:1
+student.major
+'컴퓨터공학부'
+let id = Symbol()
+undefined
+const member = {
+    name : "고욱현",
+    [id] : 1823212
+}
+undefined
+member
+{name: '고욱현', Symbol(): 1823212}
+member[id]
+1823212

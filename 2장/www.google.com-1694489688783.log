@@ -1,0 +1,24 @@
+Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+DevTools failed to load source map: Could not load content for https://www.google.com/_/mss/boq-one-google/_/ss/k=boq-one-google.OneGoogleWidgetUi.ZKLDB40k_oE.L.B1.O/am=CADMHw/d=1/ed=1/rs=AM-SdHuM0SPa63pIv_J5EXQ-Wg0HLvEnMA/chrome.css.map: HTTP 오류: 상태 코드 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+DevTools failed to load source map: Could not load content for https://www.google.com/_/mss/boq-one-google/_/ss/k=boq-one-google.OneGoogleWidgetUi.ZKLDB40k_oE.L.B1.O/am=DgBMHwAC/d=1/ed=1/rs=AM-SdHuFFLZ_XCbEMqBazFQTSu3A1tOb3Q/chrome.css.map: HTTP 오류: 상태 코드 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
+10+20
+30
+console.log("안녕하세요")
+VM1113:1 안녕하세요
+undefined
+alert("안녕하세요")
+undefined
+confirm("종료하시겠습니까?")
+true
+prompt("이름을 입력하세요.")
+'고욱현'
+prompt("종료하시겠습니까?.", "예")
+'예'
+name = "고욱현"
+'고욱현'
+console.log(name + "님 환엽합니다.")
+VM1537:1 고욱현님 환엽합니다.
+undefined

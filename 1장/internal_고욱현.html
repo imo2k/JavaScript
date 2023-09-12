@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 안에 스크립트 작성 - 고욱현</title>
+</head>
+<body>
+    <h1>새로고침 하세요</h1>
+    <script>
+        function random(number) {
+            return Math.floor(Math.random() * number);
+
+        }
+
+        function bgChange() {
+            const rndCol =
+             ' rgb(' + random(255) + ' , ' + random(255) + ' , ' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        }
+        bgChange();
+    </script>
+</body>
+</html>
