@@ -1,7 +1,6 @@
-var hi = "hello";   // 전역 변수
+var hi ='hello!';
 
 function greeting() {
-    console.log(hi);   // hi의 내용이 출력되나?
+    console.log(hi);
 }
-
-greeting();  // 함수 호출
+greeting();
