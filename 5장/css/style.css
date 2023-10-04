@@ -4,6 +4,7 @@ h1 {
 }
 .clicked {
   background-color:skyblue;
+  color:white;
 }
 #profile {
   display:flex;
