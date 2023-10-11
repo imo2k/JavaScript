@@ -6,6 +6,21 @@ button {
   padding:15px;
 }
 
+#modal-box{
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0; /*모달박스 위치 고정*/
+  background-color:rgba(0,0,0,0.6);
+  display:none;/*toggle때문에 none값*/
+  justify-content:center;
+  align-items:center;
+}
+#modal-box.active{
+  display:flex;
+}
+
 #modal-contents{
   background-color:#fff;
   width:300px;
