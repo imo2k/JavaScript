@@ -37,6 +37,7 @@ console.log("animal과 fruits 연결 : ", animal.concat(fruits));
 console.log("[...animal, ...fruits] : ", [...animal, ...fruits])
 
 //배열 복사하기
+// 배열은 주소를 복사한다. => 값이 모두 바뀐다.
 console.log("fruits : ", fruits)
 let fruits2 = fruits;
 fruits2[1] = "grape";
@@ -61,7 +62,7 @@ const book = {
     pages : 650
 }
 //" published date "프로퍼티 추가
-book.published date = "2023-11"; //Syntax Error => 띄어쓰기 이슈
+//book.published date = "2023-11"; //Syntax Error => 띄어쓰기 이슈
 
 // ["문자열"] 표기법으로 사용하면 가능
 book["published date"] = "2023-11";
@@ -102,6 +103,9 @@ function makeUser(name, age) {
         age : age //변수와 프로퍼티 이름이 같다.
     }
 }
+
+let user1 = makeUser("고욱현", 25);
+console.log("use12 : ", user2);
 //위 코드에서 객체 정의할 때 변수와 프로퍼티 이름이 같다면 줄여서 사용 가능하다.    
 function makeUser(name, age) {
     return {
@@ -109,6 +113,17 @@ function makeUser(name, age) {
         age //프로퍼티 값 단축이라고 함
     }
 }
+
+/*
+    프로퍼티 단축 표기법 => Ex) name : name
+        객체 리터럴에서 사용.
+        직접 할당 할 때 사용
+        주로 간단한 객체 초기화에 사용이 됨.
+    this.name = name
+        생성자 함수 내부에서 사용 됨.
+        객체의 메서드니ㅏ 속성을 초기화 하는데 사용
+        생성자 함수를 통해 객체를 만들 때 주로 사용.
+*/
 
 let user2 = makeUser("고욱현", 25);
 console.log("user2 : ", user2);
@@ -157,14 +172,3 @@ console.log("tel_num === phone : ", tel_num === phone)
 //Symbol.keyFor()메서드
 //전역 Symbol의 키를 찾는다.
 console.log("Symbol.keyFor(phone) : ", Symbol.keyFor(phone))
-
-/*
-    프로퍼티 단축 표기법 => Ex) name : name
-        객체 리터럴에서 사용.
-        직접 할당 할 때 사용
-        주로 간단한 객체 초기화에 사용이 됨.
-    this.name = name
-        생성자 함수 내부에서 사용 됨.
-        객체의 메서드니ㅏ 속성을 초기화 하는데 사용
-        생성자 함수를 통해 객체를 만들 때 주로 사용.
-*/
