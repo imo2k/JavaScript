@@ -1,0 +1,229 @@
+str5 = "Hello, everyone"
+'Hello, everyone'
+array2 = str5.split("")
+(15) ['H', 'e', 'l', 'l', 'o', ',', ' ', 'e', 'v', 'e', 'r', 'y', 'o', 'n', 'e']
+array3 = [...str5]
+(15) ['H', 'e', 'l', 'l', 'o', ',', ' ', 'e', 'v', 'e', 'r', 'y', 'o', 'n', 'e']
+array4 = Array.from(str5)
+(15) ['H', 'e', 'l', 'l', 'o', ',', ' ', 'e', 'v', 'e', 'r', 'y', 'o', 'n', 'e']
+str6 = array4.join("")
+'Hello, everyone'
+let lesson = []
+undefined
+season[0] = "spring"
+seanson[1] = "summer"
+VM435:1 Uncaught ReferenceError: season is not defined
+    at <anonymous>:1:1
+(익명) @ VM435:1
+season[0] = "spring"
+season[1] = "summer"
+VM453:1 Uncaught ReferenceError: season is not defined
+    at <anonymous>:1:1
+(익명) @ VM453:1
+let season = []
+undefined
+season[0] = "spring"
+season[1] = "summer"
+'summer'
+season
+(2) ['spring', 'summer']
+let pets = ["dog","cat","parrot"]
+undefined
+pets
+(3) ['dog', 'cat', 'parrot']
+let fruits = new Array("사과","복숭아","포도")
+undefined
+fruits
+(3) ['사과', '복숭아', '포도']
+pets[1] = "hamster"
+'hamster'
+pets
+(3) ['dog', 'hamster', 'parrot']
+let fruits = new Array('사과','복숭아','포도')
+fruits[4] = "배"
+'배'
+fruits
+(5) ['사과', '복숭아', '포도', 비어 있음, '배']
+fruits[3]
+undefined
+let colors = ["red","green","blue","white","black"]
+for (let i=0; i<colors.length;i++) {
+    console.log(color[i])
+}
+VM1240:3 Uncaught ReferenceError: color is not defined
+    at <anonymous>:3:17
+(익명) @ VM1240:3
+let colors = ["red","green","blue","white","black"]
+undefined
+for (let i=0; i<colors.length;i++) {
+    console.log(color[i])
+}
+VM1255:2 Uncaught ReferenceError: color is not defined
+    at <anonymous>:2:17
+(익명) @ VM1255:2
+for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i])
+}
+VM1271:2 red
+VM1271:2 green
+VM1271:2 blue
+VM1271:2 white
+VM1271:2 black
+undefined
+let animals = ["lion","bear","bird"]
+animals forEach(animals => {
+VM1419:2 Uncaught SyntaxError: Unexpected identifier 'forEach'
+let animals = ["lion","bear","bird"]
+animals.forEach(animals => {
+    console.log(animal)
+}
+VM1500:4 Uncaught SyntaxError: missing ) after argument list
+let animals = ["lion","bear","bird"]
+animals.forEach(animal) => {
+    console.log(animal)
+}
+VM1506:2 Uncaught SyntaxError: Malformed arrow function parameter list
+let animals = ["lion","bear","bird"]
+animals.forEach(animal => {
+    console.log(animal)
+})
+VM1516:3 lion
+VM1516:3 bear
+VM1516:3 bird
+undefined
+animals.forEach(animal, index) => {
+VM1609:1 Uncaught SyntaxError: Malformed arrow function parameter list
+animals.forEach((animal, index) => {
+    console.log(`animals[${index}] : ${animal}`)
+})
+VM1738:2 animals[0] : lion
+VM1738:2 animals[1] : bear
+VM1738:2 animals[2] : bird
+undefined
+animals[0] : lion
+animals[1] : bear
+animals[2] : bird
+VM1880:1 Uncaught SyntaxError: Unexpected token ':'
+animals.forEach((animal, index, array) => {
+    console.log(`[${array}][${index}] : ${animal}`)
+})
+VM2112:2 [lion,bear,bird][0] : lion
+VM2112:2 [lion,bear,bird][1] : bear
+VM2112:2 [lion,bear,bird][2] : bird
+undefined
+let vegitables = ["양상추","토마토","피클"]
+undefined
+let meat = ["불고기"]
+undefined
+let meatBurger = vegitable.concat(meat, "빵")
+VM2332:1 Uncaught ReferenceError: vegitable is not defined
+    at <anonymous>:1:18
+(익명) @ VM2332:1
+meatBurger
+VM2355:1 Uncaught ReferenceError: meatBurger is not defined
+    at <anonymous>:1:1
+(익명) @ VM2355:1
+let meatBurger = vegitables.concat(meat, "빵")
+undefined
+meatBurger
+(5) ['양상추', '토마토', '피클', '불고기', '빵']
+let meatBurger2 = meat.concat("빵", vegitables)
+undefined
+meatBurger2
+(5) ['불고기', '빵', '양상추', '토마토', '피클']
+let cheese = ["모짜렐라","슈레드"]
+undefined
+let cheesBurger = ["빵", ...vegitables, ...cheese]
+undefined
+cheeseBurger
+VM2751:1 Uncaught ReferenceError: cheeseBurger is not defined
+    at <anonymous>:1:1
+(익명) @ VM2751:1
+cheesBurger
+(6) ['빵', '양상추', '토마토', '피클', '모짜렐라', '슈레드']
+let numbers = [6,9,3,21,18]
+undefined
+numbers.reverse()
+(5) [18, 21, 3, 9, 6]
+let week = ["sun","mon","tue"]
+undefined
+let values = [5,20,3,11,4,15]
+undefined
+week.sort()
+(3) ['mon', 'sun', 'tue']
+values.sort()
+(6) [11, 15, 20, 3, 4, 5]
+let values = [5,20,3,11,4,15]
+undefined
+values.sort(function(a,b){
+    if(a>b) return 1
+    if(a<b) return -1
+    if(a===b) return 0
+})
+(6) [3, 4, 5, 11, 15, 20]
+values.sort(function(a,b){
+    return a-b
+})
+(6) [3, 4, 5, 11, 15, 20]
+let animals ] ["lion","bear","bird"]
+VM3569:1 Uncaught SyntaxError: Unexpected token ']'
+animals.pop()
+'bird'
+animals
+(2) ['lion', 'bear']
+animals.push("tiger")
+3
+animals
+(3) ['lion', 'bear', 'tiger']
+let fruits = ["apple","pear","banana"]
+undefined
+fruitsshift()
+VM3788:1 Uncaught ReferenceError: fruitsshift is not defined
+    at <anonymous>:1:1
+(익명) @ VM3788:1
+fruits
+(3) ['apple', 'pear', 'banana']
+fruits.shift()
+'apple'
+fruits
+(2) ['pear', 'banana']
+fruits.unshift("cherry")
+3
+fruits
+(3) ['cherry', 'pear', 'banana']
+let subjects = ["html","css","javascript","react","typescript"]
+undefined
+subjects.splice(2)
+(3) ['javascript', 'react', 'typescript']
+subjects
+(2) ['html', 'css']
+let week = ["sun","mon","tue","wed","thu","fri","sat"]
+undefined
+let weekday = week.splice(1,5)
+undefined
+weekday
+(5) ['mon', 'tue', 'wed', 'thu', 'fri']
+week
+(2) ['sun', 'sat']
+let brunch = ["egg","milk","apple","banana"]
+undefined
+brunch.splice(2,0,"coffee","bread")
+[]
+brunch
+(6) ['egg', 'milk', 'coffee', 'bread', 'apple', 'banana']
+let colors = ["red","green","blue","white","black"]
+undefined
+colors.slice(2)
+(3) ['blue', 'white', 'black']
+colors
+(5) ['red', 'green', 'blue', 'white', 'black']
+let colors2 = colors.slice(1,4)
+undefined
+colors2
+(3) ['green', 'blue', 'white']
+color
+VM4693:1 Uncaught ReferenceError: color is not defined
+    at <anonymous>:1:1
+(익명) @ VM4693:1
+colors
+(5) ['red', 'green', 'blue', 'white', 'black']
